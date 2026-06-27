@@ -130,3 +130,27 @@ h2::before {
   color: var(--accent) !important;
   font-family: var(--mono-font);
 }
+
+/* Skills section pills */
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.skill-pill {
+  font-family: var(--mono-font);
+  font-size: 0.85rem;
+  padding: 0.45rem 1rem;
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.skill-pill:hover {
+  background: var(--accent);
+  color: var(--bg-primary) !important;
+  transform: translateY(-2px);
+}
