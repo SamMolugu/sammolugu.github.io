@@ -1,7 +1,6 @@
 ---
 name: Job Search Automation Tool
 tools: [Python, Typer, Pydantic, Playwright, SQLite]
-image: 
 description: A CLI pipeline that parses a resume PDF, scores job matches via ATS APIs, and automates application form pre-fill.
 ---
 
