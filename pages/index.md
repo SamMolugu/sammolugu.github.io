@@ -1,6 +1,8 @@
 ---
-layout: default
-permalink: /
+layout: page
+title: Projects
+permalink: /projects/
+weight: 2
 ---
 
-{% include landing.html %}
+{% include projects/index.html %}
