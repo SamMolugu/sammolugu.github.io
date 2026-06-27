@@ -1,7 +1,7 @@
 remote_theme: yousinix/portfolYOU
 
 title: Sam Molugu
-description: Java Backend Engineer · Distributed Systems · FinTech & Healthcare
+description: Backend Engineer building distributed systems for FinTech and healthcare — now shipping full-stack products independently.
 url: "https://sammolugu.github.io"
 
 author:
@@ -17,7 +17,6 @@ plugins:
 
 paginate: 6
 paginate_path: "/blog/page:num/"
-
 permalink: /:title/
 
 defaults:
@@ -36,3 +35,11 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+
+exclude:
+  - docs/
+  - test/
+  - portfolyou-jekyll-theme.gemspec
+  - project_upholstery.ps1
+  - Gemfile
+  - README.md

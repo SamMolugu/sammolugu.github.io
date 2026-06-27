@@ -36,3 +36,12 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+
+exclude:
+  exclude:
+  - docs/
+  - test/
+  - portfolyou-jekyll-theme.gemspec
+  - project_upholstery.ps1
+  - Gemfile
+  - README.md
