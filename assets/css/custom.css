@@ -1,0 +1,134 @@
+/* ============================================
+   CUSTOM OVERRIDE THEME — Sam Molugu Portfolio
+   Deep Teal / Terminal-Inspired
+   ============================================ */
+
+:root {
+  --accent: #2dd4bf;        /* teal accent */
+  --accent-dim: #14b8a6;
+  --bg-primary: #0a0e0f;    /* near-black, slight blue-green tint */
+  --bg-secondary: #111617;
+  --text-primary: #e8edec;
+  --text-secondary: #8b9897;
+  --border-color: rgba(45, 212, 191, 0.15);
+  --mono-font: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Accent color takeover — links, highlights, theme blue → teal */
+a,
+.navigation a:hover,
+.social-media a:hover,
+.btn-primary {
+  color: var(--accent) !important;
+}
+
+a:hover {
+  color: var(--accent-dim) !important;
+}
+
+/* Hero name + nav use mono font for that "terminal" feel */
+.landing .title,
+.navigation .title {
+  font-family: var(--mono-font);
+  letter-spacing: -0.02em;
+}
+
+/* Add a terminal-style prompt before your name on the homepage */
+.landing .title::before {
+  content: "$ whoami";
+  display: block;
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-family: var(--mono-font);
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+/* Subtitle/tagline styling */
+.landing .subtitle {
+  font-family: var(--mono-font);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Skill pills instead of plain text/bars */
+.skill-tag {
+  display: inline-block;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--accent);
+  font-family: var(--mono-font);
+  font-size: 0.85rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 4px;
+  margin: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+}
+
+/* Project cards */
+.project-card,
+.card {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover,
+.card:hover {
+  border-color: var(--accent) !important;
+  transform: translateY(-4px);
+}
+
+/* Buttons */
+.btn,
+button {
+  font-family: var(--mono-font);
+  border-radius: 4px;
+}
+
+.btn-resume {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg-primary) !important;
+  font-family: var(--mono-font);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: background 0.2s ease;
+}
+
+.btn-resume:hover {
+  background: var(--accent-dim);
+  color: var(--bg-primary) !important;
+}
+
+/* Section headers — add a terminal comment style */
+h2::before {
+  content: "// ";
+  color: var(--accent);
+  opacity: 0.6;
+}
+
+/* Timeline accent */
+.timeline .date,
+.timeline-date {
+  color: var(--accent) !important;
+  font-family: var(--mono-font);
+}
