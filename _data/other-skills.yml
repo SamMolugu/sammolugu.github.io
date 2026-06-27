@@ -1,7 +1,10 @@
-- name: Adobe Photoshop
-  percentage: 95
-  color: info
-
-- name: Adobe Illustrator
-  percentage: 90
-  color: success
+- name: AWS (EC2, S3, Lambda, IAM)
+- name: Docker
+- name: Kubernetes
+- name: Terraform
+- name: Jenkins
+- name: GitHub Actions
+- name: JUnit / Mockito
+- name: Playwright
+- name: Datadog
+- name: Splunk
