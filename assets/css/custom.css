@@ -31,15 +31,12 @@ a:hover {
   color: var(--accent-dim) !important;
 }
 
-/* Hero name + nav use mono font for that "terminal" feel */
-.landing .title,
-.navigation .title {
+/* Hero name container (#container wraps the circle-image + name area) */
+#container {
   font-family: var(--mono-font);
-  letter-spacing: -0.02em;
 }
 
-/* Add a terminal-style prompt before your name on the homepage */
-.landing .title::before {
+#container::before {
   content: "$ whoami";
   display: block;
   font-size: 0.9rem;
@@ -49,17 +46,19 @@ a:hover {
   opacity: 0.7;
 }
 
-/* Subtitle/tagline styling */
-.landing .subtitle {
+/* Tagline / description text below name */
+.text-muted {
   font-family: var(--mono-font);
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: var(--text-secondary) !important;
   border-left: 2px solid var(--accent);
   padding-left: 1rem;
   margin-top: 1.5rem;
+  display: inline-block;
+  text-align: left !important;
 }
 
-/* Skill pills instead of plain text/bars */
+/* Skill pills (for when we add skill-tag markup later) */
 .skill-tag {
   display: inline-block;
   background: var(--bg-secondary);
@@ -119,7 +118,7 @@ button {
   color: var(--bg-primary) !important;
 }
 
-/* Section headers — add a terminal comment style */
+/* Section headers — terminal comment style */
 h2::before {
   content: "// ";
   color: var(--accent);
